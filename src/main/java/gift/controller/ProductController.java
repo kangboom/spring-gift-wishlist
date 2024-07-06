@@ -1,9 +1,16 @@
 package gift.controller;
 
+<<<<<<< HEAD
 import gift.NameException;
 import gift.Product;
 import gift.ProductDto;
 import gift.ProductService;
+=======
+import gift.exception.NameException;
+import gift.domain.Product;
+import gift.dto.ProductDto;
+import gift.service.ProductService;
+>>>>>>> step2
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
