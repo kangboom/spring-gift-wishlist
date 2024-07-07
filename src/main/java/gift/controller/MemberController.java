@@ -1,13 +1,16 @@
 package gift.controller;
 
+
 import gift.dto.JwtResponse;
 import gift.dto.MemberRequest;
 import gift.service.MemberService;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+
+
+import gift.dto.JwtDto;
+import gift.dto.MemberDto;
+import gift.service.MemberService;
+import org.springframework.http.HttpHeaders;
+
 
 @RestController
 public class MemberController {
@@ -33,5 +36,6 @@ public class MemberController {
             return new ResponseEntity<>(new JwtResponse(token), HttpStatus.OK);
         }
         return new ResponseEntity<>(null, HttpStatus.FORBIDDEN);
+
     }
 }

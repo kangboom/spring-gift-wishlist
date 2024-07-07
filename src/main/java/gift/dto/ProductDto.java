@@ -3,6 +3,7 @@ package gift.dto;
 public class ProductDto{
     private String name;
     private int price;
+
     private String imageUrl;
 
     public ProductDto(){}
@@ -11,6 +12,7 @@ public class ProductDto{
     }
 
     public void setName(String name) { this.name = name; }
+
 
     public int getPrice() {
         return price;

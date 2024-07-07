@@ -31,6 +31,7 @@ public class MemberRepository {
 
         return new Member(keyHolder.getKey().longValue(), memberRequest.getEmail(), memberRequest.getPassword());
     }
+  
     public Member findByEmail(String email) {
         String sql = "SELECT * FROM member WHERE email = ?";
         try {

@@ -13,10 +13,12 @@ public class Product {
 
     public Product(){
     }
+
     public Product(Long id, String name, int price, String imageUrl){
         findNameLengthException(name);
         findAllowedCharactersException(name);
         findSpecificCharacterException(name);
+
         this.id = id;
         this.name = name;
         this.price = price;
@@ -36,6 +38,7 @@ public class Product {
 
     public int getPrice() { return this.price;}
 
+
     public void setPrice(Integer price) {
         this.price = price;
     }
@@ -47,6 +50,7 @@ public class Product {
     public void setImageUrl(String imageUrl) {
         this.imageUrl = imageUrl;
     }
+
 
     private void findNameLengthException(String name){
         if (name.length() > 15){
@@ -61,6 +65,7 @@ public class Product {
 
     private void findSpecificCharacterException(String name){
         if (name.contains("카카오")){
+
             throw new NameException("담당 MD와 협의해 주세요.");
         }
     }

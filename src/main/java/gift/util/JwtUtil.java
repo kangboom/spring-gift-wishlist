@@ -39,6 +39,7 @@ public class JwtUtil {
         }
     }
 
+
     public String getEmailFromToken(String token) {
         Claims claims = getClaims(token);
         if( claims != null){
@@ -46,4 +47,5 @@ public class JwtUtil {
         }
         return null;
     }
+
 }

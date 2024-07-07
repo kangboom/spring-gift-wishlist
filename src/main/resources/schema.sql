@@ -17,3 +17,4 @@ CREATE TABLE IF NOT EXISTS wish (
     product_id BIGINT,
     FOREIGN KEY (member_id) REFERENCES Member(id)
 );
+
