@@ -7,15 +7,18 @@ public class Member {
 
     public Member(){}
 
-    public Member(String email, String password) {
+    public Member(Long id, String email, String password) {
+        this.id = id;
         this.email = email;
         this.password = password;
     }
     public Long getId() {
-        return id;
+        return this.id;
     }
 
     public void setId(Long id){this.id = id; }
+
+
     public String getEmail() {
         return email;
     }
